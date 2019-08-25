@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
-using Assets.Scripts.PlayerComponent.PlayerMove;
-namespace Assets.Scripts.PlayerComponent.PlayerInput
+using Assets.Scripts.Player.PlayerMove;
+
+namespace Assets.Scripts.Player.PlayerInput
 {
     public class PlayerInputByKeyboard : MonoBehaviour, IPlayerMoveInput
     {

@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-namespace Assets.Scripts.PlayerComponent.PlayerMove
+namespace Assets.Scripts.Player.PlayerMove
 {
     //インターフェースは、利用する側が定義してあげる
     //こうすることで、Input側にどんな修正があっても、利用する側は変更がいらない

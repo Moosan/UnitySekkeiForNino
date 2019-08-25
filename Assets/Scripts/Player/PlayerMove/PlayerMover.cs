@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.PlayerComponent.PlayerMove
+namespace Assets.Scripts.Player.PlayerMove
 {
-    [RequireComponent(typeof(Rigidbody),typeof(IPlayerMoveInput))]
+    [RequireComponent(typeof(Rigidbody), typeof(IPlayerMoveInput))]
     public class PlayerMover : MonoBehaviour
     {
         public float speed = 10;

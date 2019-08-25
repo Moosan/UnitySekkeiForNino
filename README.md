@@ -1,3 +1,3 @@
-# スタート位置
+# アイテムとスコア完成
 
-<a href="https://gyazo.com/0ff93c65eadab4f5ec61eee2724853ab"><img src="https://i.gyazo.com/0ff93c65eadab4f5ec61eee2724853ab.png" alt="Image from Gyazo" width="906.4"/></a>
+[![Image from Gyazo](https://i.gyazo.com/b3e6d9e92efcf87ce8782539fdad4ee6.png)](https://gyazo.com/b3e6d9e92efcf87ce8782539fdad4ee6)

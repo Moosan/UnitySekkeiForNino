@@ -1,18 +1,31 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.Events;
-using Assets.Scripts.Score;
-namespace Assets.Scripts.ItemConponent
+using UniRx;
+
+namespace Assets.Scripts.Item
 {
-    public class Item : MonoBehaviour,IScoreProvider
+    public abstract class Item : MonoBehaviour
     {
-        public IObservable<int> OnScore => throw new NotImplementedException();
+        private readonly Subject<Collider> OnGotThisItem = new Subject<Collider>();
+        protected IObservable<Collider> OnGot
+        {
+            get
+            {
+                return OnGotThisItem;
+            }
+        }
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Player"))
+            if (other.GetComponent<IItemGetter>() != null)
             {
+                OnGotThisItem.OnNext(other);
+                OnGotThisItem.OnCompleted();
                 Destroy(gameObject);
             }
         }
+    }
+    public interface IItemGetter
+    {
+
     }
 }
